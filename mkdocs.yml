@@ -4,6 +4,8 @@ repo_name: twangodev/cs61a-guide
 repo_url: https://github.com/twangodev/cs61a--guide
 edit_uri: edit/main/docs/
 
+site_url: https://cs61a.twango.dev/
+site_description: A handy guide and reference for CS61A students.
 
 theme:
   name: material
