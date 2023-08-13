@@ -1,17 +1,4 @@
-# Welcome to MkDocs
+# Welcome to CS61A Guide
 
-For full documentation visit [mkdocs.org](https://www.mkdocs.org).
+This guide is a collection of my notes and resources for the course CS61A: Structure and Interpretation of Computer Programs.
 
-## Commands
-
-* `mkdocs new [dir-name]` - Create a new project.
-* `mkdocs serve` - Start the live-reloading docs server.
-* `mkdocs build` - Build the documentation site.
-* `mkdocs -h` - Print help message and exit.
-
-## Project layout
-
-    mkdocs.yml    # The configuration file.
-    docs/
-        index.md  # The documentation homepage.
-        ...       # Other markdown pages, images and other files.
