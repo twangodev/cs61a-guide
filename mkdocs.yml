@@ -13,6 +13,7 @@ nav:
       - Introduction to CS: python/introduction.md
       - Names and Functions: python/names-and-functions.md
       - Control: python/control.md
+      - Higher Order Functions: python/hof.md
   - Exams:
     - Midterm:
       - Tips: exams/midterm/tips.md
