@@ -8,6 +8,11 @@ site_url: https://cs61a.twango.dev/
 site_description: A handy guide and reference for CS61A students.
 
 nav:
+  - Home: index.md
+  - Python:
+      - Introduction to CS: python/introduction.md
+      - Names and Functions: python/names-and-functions.md
+      - Control: python/control.md
   - Exams:
     - Midterm:
       - Tips: exams/midterm/tips.md
@@ -17,10 +22,6 @@ nav:
       - Tips: exams/final/tips.md
       - Review Problems: exams/final/review-problems.md
       - Cheat Sheet: exams/final/cheat-sheet.md
-  - Lectures:
-    - Introduction: lectures/introduction.md
-    - Names and Functions: lectures/names-and-functions.md
-
 
 theme:
   name: material
@@ -53,7 +54,7 @@ plugins:
   - search
   - glightbox
   - offline
-#  - social
+  - social
 
 markdown_extensions:
   - abbr
