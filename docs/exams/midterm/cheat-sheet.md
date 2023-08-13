@@ -239,6 +239,7 @@ The syntax from the frame header is as follows:
 ```
 f<frame number>: <origin> [parent=<parent>]
 ```
+
 - `<frame number>` is the number of the frame, starting from 0
 - `<origin>` is the origin of the frame, which is either `global` or `function`
 - `<parent>` is the parent of the frame, which is the frame number of the parent
@@ -248,6 +249,7 @@ The syntax for a function is as follows:
 ```
 func<intrinsics name>(<parameters>) [parent=<parent>]
 ```
+
 - `<intrinsics name>` is the name of the function
 - `<parameters>` is the list of parameters, separated by commas
 - `<parent>` is the parent of the frame, which is the frame number of the parent
