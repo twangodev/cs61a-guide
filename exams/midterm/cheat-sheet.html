@@ -1,0 +1,2055 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="A handy guide and reference for CS61A students.">
+      
+      
+      
+        <link rel="canonical" href="https://cs61a.twango.dev/exams/midterm/cheat-sheet.html">
+      
+      
+        <link rel="prev" href="review-problems.html">
+      
+      
+        <link rel="next" href="../final/tips.html">
+      
+      <link rel="icon" href="../../assets/favicon.ico">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.1.21">
+    
+    
+      
+        <title>Cheat Sheet - CS61A Guide</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.eebd395e.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ecc896b0.min.css">
+      
+      
+
+    
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+      
+        <meta  property="og:type"  content="website" >
+      
+        <meta  property="og:title"  content="Cheat Sheet - CS61A Guide" >
+      
+        <meta  property="og:description"  content="A handy guide and reference for CS61A students." >
+      
+        <meta  property="og:image"  content="https://cs61a.twango.dev/assets/images/social/exams/midterm/cheat-sheet.png" >
+      
+        <meta  property="og:image:type"  content="image/png" >
+      
+        <meta  property="og:image:width"  content="1200" >
+      
+        <meta  property="og:image:height"  content="630" >
+      
+        <meta  property="og:url"  content="https://cs61a.twango.dev/exams/midterm/cheat-sheet.html" >
+      
+        <meta  name="twitter:card"  content="summary_large_image" >
+      
+        <meta  name="twitter:title"  content="Cheat Sheet - CS61A Guide" >
+      
+        <meta  name="twitter:description"  content="A handy guide and reference for CS61A students." >
+      
+        <meta  name="twitter:image"  content="https://cs61a.twango.dev/assets/images/social/exams/midterm/cheat-sheet.png" >
+      
+    
+    
+   <link href="../../assets/stylesheets/glightbox.min.css" rel="stylesheet"/><style>
+        html.glightbox-open { overflow: initial; height: 100%; }
+        .gslide-title { margin-top: 0px; user-select: text; }
+        .gslide-desc { color: #666; user-select: text; }
+        .gslide-image img { background: white; }
+        
+            .gscrollbar-fixer { padding-right: 15px; }
+            .gdesc-inner { font-size: 0.75rem; }
+            body[data-md-color-scheme="slate"] .gdesc-inner { background: var(--md-default-bg-color);}
+            body[data-md-color-scheme="slate"] .gslide-title { color: var(--md-default-fg-color);}
+            body[data-md-color-scheme="slate"] .gslide-desc { color: var(--md-default-fg-color);}
+            </style> <script src="../../assets/javascripts/glightbox.min.js"></script></head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="indigo">
+  
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&"object"==typeof palette.color)for(var key of Object.keys(palette.color))document.body.setAttribute("data-md-color-"+key,palette.color[key])</script>
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#midterm-cheat-sheet" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../index.html" title="CS61A Guide" class="md-header__button md-logo" aria-label="CS61A Guide" data-md-component="logo">
+      
+  <img src="../../assets/cs61a.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            CS61A Guide
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Cheat Sheet
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+          
+            
+            
+            
+            <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_1">
+            
+              <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_2" hidden>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a4 4 0 0 0-4 4 4 4 0 0 0 4 4 4 4 0 0 0 4-4 4 4 0 0 0-4-4m0 10a6 6 0 0 1-6-6 6 6 0 0 1 6-6 6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+              </label>
+            
+          
+            
+            
+            
+            <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_2">
+            
+              <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_1" hidden>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 18c-.89 0-1.74-.2-2.5-.55C11.56 16.5 13 14.42 13 12c0-2.42-1.44-4.5-3.5-5.45C10.26 6.2 11.11 6 12 6a6 6 0 0 1 6 6 6 6 0 0 1-6 6m8-9.31V4h-4.69L12 .69 8.69 4H4v4.69L.69 12 4 15.31V20h4.69L12 23.31 15.31 20H20v-4.69L23.31 12 20 8.69Z"/></svg>
+              </label>
+            
+          
+        </form>
+      
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/twangodev/cs61a-guide" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    twangodev/cs61a-guide
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../index.html" title="CS61A Guide" class="md-nav__button md-logo" aria-label="CS61A Guide" data-md-component="logo">
+      
+  <img src="../../assets/cs61a.png" alt="logo">
+
+    </a>
+    CS61A Guide
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/twangodev/cs61a-guide" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    twangodev/cs61a-guide
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../index.html" class="md-nav__link">
+        Home
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+          Python
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_2">
+          <span class="md-nav__icon md-icon"></span>
+          Python
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python/introduction.html" class="md-nav__link">
+        Introduction to CS
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python/names-and-functions.html" class="md-nav__link">
+        Names and Functions
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python/control.html" class="md-nav__link">
+        Control
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python/hof.html" class="md-nav__link">
+        Higher Order Functions
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../python/environments.html" class="md-nav__link">
+        Environments
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../regex.html" class="md-nav__link">
+        Regex
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../sql.html" class="md-nav__link">
+        SQL
+      </a>
+    </li>
+  
+
+    
+      
+      
+      
+
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5" checked>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5" id="__nav_5_label" tabindex="0">
+          Exams
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_5_label" aria-expanded="true">
+        <label class="md-nav__title" for="__nav_5">
+          <span class="md-nav__icon md-icon"></span>
+          Exams
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+    
+  
+  
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_1" checked>
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5_1" id="__nav_5_1_label" tabindex="0">
+          Midterm
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_1_label" aria-expanded="true">
+        <label class="md-nav__title" for="__nav_5_1">
+          <span class="md-nav__icon md-icon"></span>
+          Midterm
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="tips.html" class="md-nav__link">
+        Tips
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="review-problems.html" class="md-nav__link">
+        Review Problems
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+    
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          Cheat Sheet
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="cheat-sheet.html" class="md-nav__link md-nav__link--active">
+        Cheat Sheet
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#names-and-functions" class="md-nav__link">
+    Names and Functions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#logical-operators" class="md-nav__link">
+    Logical Operators
+  </a>
+  
+    <nav class="md-nav" aria-label="Logical Operators">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#and" class="md-nav__link">
+    and
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#or" class="md-nav__link">
+    or
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#is" class="md-nav__link">
+    is
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#classes" class="md-nav__link">
+    Classes
+  </a>
+  
+    <nav class="md-nav" aria-label="Classes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inheritance" class="md-nav__link">
+    Inheritance
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#constructor" class="md-nav__link">
+    Constructor
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#self" class="md-nav__link">
+    self
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#string-representation" class="md-nav__link">
+    String Representation
+  </a>
+  
+    <nav class="md-nav" aria-label="String Representation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#str" class="md-nav__link">
+    str
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#repr" class="md-nav__link">
+    repr
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lists" class="md-nav__link">
+    Lists
+  </a>
+  
+    <nav class="md-nav" aria-label="Lists">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#list-functions" class="md-nav__link">
+    List Functions
+  </a>
+  
+    <nav class="md-nav" aria-label="List Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#appending" class="md-nav__link">
+    Appending
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#extending" class="md-nav__link">
+    Extending
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inserting" class="md-nav__link">
+    Inserting
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#removing" class="md-nav__link">
+    Removing
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#list-comprehensions" class="md-nav__link">
+    List Comprehensions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#list-operations" class="md-nav__link">
+    List Operations
+  </a>
+  
+    <nav class="md-nav" aria-label="List Operations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bracket-notation" class="md-nav__link">
+    Bracket Notation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#addition" class="md-nav__link">
+    Addition
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dictionaries" class="md-nav__link">
+    Dictionaries
+  </a>
+  
+    <nav class="md-nav" aria-label="Dictionaries">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dictionary-functions" class="md-nav__link">
+    Dictionary Functions
+  </a>
+  
+    <nav class="md-nav" aria-label="Dictionary Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#get" class="md-nav__link">
+    Get
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#keys" class="md-nav__link">
+    Keys
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#values" class="md-nav__link">
+    Values
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#items" class="md-nav__link">
+    Items
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#control" class="md-nav__link">
+    Control
+  </a>
+  
+    <nav class="md-nav" aria-label="Control">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pure-functions" class="md-nav__link">
+    Pure Functions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#life-cycle-of-user-defined-functions" class="md-nav__link">
+    Life Cycle of User-Defined Functions
+  </a>
+  
+    <nav class="md-nav" aria-label="Life Cycle of User-Defined Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#definition" class="md-nav__link">
+    Definition
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#call-and-application" class="md-nav__link">
+    Call and Application
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inheritance-throughout-frames" class="md-nav__link">
+    Inheritance throughout Frames
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#execution-rules" class="md-nav__link">
+    Execution Rules
+  </a>
+  
+    <nav class="md-nav" aria-label="Execution Rules">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#function-definition-statements" class="md-nav__link">
+    Function Definition Statements
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#assignment-statements" class="md-nav__link">
+    Assignment Statements
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conditional-statements" class="md-nav__link">
+    Conditional Statements
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#while-statements" class="md-nav__link">
+    While Statements
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#python-unique-features" class="md-nav__link">
+    Python Unique Features
+  </a>
+  
+    <nav class="md-nav" aria-label="Python Unique Features">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#division" class="md-nav__link">
+    Division
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#none" class="md-nav__link">
+    None
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#multiple-return-values" class="md-nav__link">
+    Multiple Return Values
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#boolean-context" class="md-nav__link">
+    Boolean Context
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recursion" class="md-nav__link">
+    Recursion
+  </a>
+  
+    <nav class="md-nav" aria-label="Recursion">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#recursive-steps" class="md-nav__link">
+    Recursive Steps
+  </a>
+  
+    <nav class="md-nav" aria-label="Recursive Steps">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#identify-the-base-cases" class="md-nav__link">
+    Identify the base case(s)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recursive-leap-of-faith" class="md-nav__link">
+    Recursive Leap of Faith
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recombination" class="md-nav__link">
+    Recombination
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recursion-examples" class="md-nav__link">
+    Recursion Examples
+  </a>
+  
+    <nav class="md-nav" aria-label="Recursion Examples">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#summation" class="md-nav__link">
+    Summation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#number-of-eights" class="md-nav__link">
+    Number of Eights
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tree-recursion-example" class="md-nav__link">
+    Tree Recursion Example
+  </a>
+  
+    <nav class="md-nav" aria-label="Tree Recursion Example">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#counting-coins" class="md-nav__link">
+    Counting Coins
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#environment-diagrams" class="md-nav__link">
+    Environment Diagrams
+  </a>
+  
+    <nav class="md-nav" aria-label="Environment Diagrams">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#syntax" class="md-nav__link">
+    Syntax
+  </a>
+  
+    <nav class="md-nav" aria-label="Syntax">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#frame-header" class="md-nav__link">
+    Frame Header
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-syntax" class="md-nav__link">
+    Function Syntax
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+      
+      
+      
+      <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_5_2" >
+      
+      
+      
+        <label class="md-nav__link" for="__nav_5_2" id="__nav_5_2_label" tabindex="0">
+          Final
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_5_2_label" aria-expanded="false">
+        <label class="md-nav__title" for="__nav_5_2">
+          <span class="md-nav__icon md-icon"></span>
+          Final
+        </label>
+        <ul class="md-nav__list" data-md-scrollfix>
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../final/tips.html" class="md-nav__link">
+        Tips
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../final/review-problems.html" class="md-nav__link">
+        Review Problems
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../final/cheat-sheet.html" class="md-nav__link">
+        Cheat Sheet
+      </a>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+            
+          
+        </ul>
+      </nav>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#names-and-functions" class="md-nav__link">
+    Names and Functions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#logical-operators" class="md-nav__link">
+    Logical Operators
+  </a>
+  
+    <nav class="md-nav" aria-label="Logical Operators">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#and" class="md-nav__link">
+    and
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#or" class="md-nav__link">
+    or
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#is" class="md-nav__link">
+    is
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#classes" class="md-nav__link">
+    Classes
+  </a>
+  
+    <nav class="md-nav" aria-label="Classes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#inheritance" class="md-nav__link">
+    Inheritance
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#constructor" class="md-nav__link">
+    Constructor
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#self" class="md-nav__link">
+    self
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#string-representation" class="md-nav__link">
+    String Representation
+  </a>
+  
+    <nav class="md-nav" aria-label="String Representation">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#str" class="md-nav__link">
+    str
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#repr" class="md-nav__link">
+    repr
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#lists" class="md-nav__link">
+    Lists
+  </a>
+  
+    <nav class="md-nav" aria-label="Lists">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#list-functions" class="md-nav__link">
+    List Functions
+  </a>
+  
+    <nav class="md-nav" aria-label="List Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#appending" class="md-nav__link">
+    Appending
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#extending" class="md-nav__link">
+    Extending
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inserting" class="md-nav__link">
+    Inserting
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#removing" class="md-nav__link">
+    Removing
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#list-comprehensions" class="md-nav__link">
+    List Comprehensions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#list-operations" class="md-nav__link">
+    List Operations
+  </a>
+  
+    <nav class="md-nav" aria-label="List Operations">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#bracket-notation" class="md-nav__link">
+    Bracket Notation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#addition" class="md-nav__link">
+    Addition
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#dictionaries" class="md-nav__link">
+    Dictionaries
+  </a>
+  
+    <nav class="md-nav" aria-label="Dictionaries">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#dictionary-functions" class="md-nav__link">
+    Dictionary Functions
+  </a>
+  
+    <nav class="md-nav" aria-label="Dictionary Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#get" class="md-nav__link">
+    Get
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#keys" class="md-nav__link">
+    Keys
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#values" class="md-nav__link">
+    Values
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#items" class="md-nav__link">
+    Items
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#control" class="md-nav__link">
+    Control
+  </a>
+  
+    <nav class="md-nav" aria-label="Control">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#pure-functions" class="md-nav__link">
+    Pure Functions
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#life-cycle-of-user-defined-functions" class="md-nav__link">
+    Life Cycle of User-Defined Functions
+  </a>
+  
+    <nav class="md-nav" aria-label="Life Cycle of User-Defined Functions">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#definition" class="md-nav__link">
+    Definition
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#call-and-application" class="md-nav__link">
+    Call and Application
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#inheritance-throughout-frames" class="md-nav__link">
+    Inheritance throughout Frames
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#execution-rules" class="md-nav__link">
+    Execution Rules
+  </a>
+  
+    <nav class="md-nav" aria-label="Execution Rules">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#function-definition-statements" class="md-nav__link">
+    Function Definition Statements
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#assignment-statements" class="md-nav__link">
+    Assignment Statements
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#conditional-statements" class="md-nav__link">
+    Conditional Statements
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#while-statements" class="md-nav__link">
+    While Statements
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#python-unique-features" class="md-nav__link">
+    Python Unique Features
+  </a>
+  
+    <nav class="md-nav" aria-label="Python Unique Features">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#division" class="md-nav__link">
+    Division
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#none" class="md-nav__link">
+    None
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#multiple-return-values" class="md-nav__link">
+    Multiple Return Values
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#boolean-context" class="md-nav__link">
+    Boolean Context
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#recursion" class="md-nav__link">
+    Recursion
+  </a>
+  
+    <nav class="md-nav" aria-label="Recursion">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#recursive-steps" class="md-nav__link">
+    Recursive Steps
+  </a>
+  
+    <nav class="md-nav" aria-label="Recursive Steps">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#identify-the-base-cases" class="md-nav__link">
+    Identify the base case(s)
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recursive-leap-of-faith" class="md-nav__link">
+    Recursive Leap of Faith
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recombination" class="md-nav__link">
+    Recombination
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#recursion-examples" class="md-nav__link">
+    Recursion Examples
+  </a>
+  
+    <nav class="md-nav" aria-label="Recursion Examples">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#summation" class="md-nav__link">
+    Summation
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#number-of-eights" class="md-nav__link">
+    Number of Eights
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#tree-recursion-example" class="md-nav__link">
+    Tree Recursion Example
+  </a>
+  
+    <nav class="md-nav" aria-label="Tree Recursion Example">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#counting-coins" class="md-nav__link">
+    Counting Coins
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#environment-diagrams" class="md-nav__link">
+    Environment Diagrams
+  </a>
+  
+    <nav class="md-nav" aria-label="Environment Diagrams">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#syntax" class="md-nav__link">
+    Syntax
+  </a>
+  
+    <nav class="md-nav" aria-label="Syntax">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#frame-header" class="md-nav__link">
+    Frame Header
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#function-syntax" class="md-nav__link">
+    Function Syntax
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+    <a href="https://github.com/twangodev/cs61a-guide/edit/main/docs/exams/midterm/cheat-sheet.md" title="Edit this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M10 20H6V4h7v5h5v3.1l2-2V8l-6-6H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h4v-2m10.2-7c.1 0 .3.1.4.2l1.3 1.3c.2.2.2.6 0 .8l-1 1-2.1-2.1 1-1c.1-.1.2-.2.4-.2m0 3.9L14.1 23H12v-2.1l6.1-6.1 2.1 2.1Z"/></svg>
+    </a>
+  
+  
+    
+      
+    
+    <a href="https://github.com/twangodev/cs61a-guide/raw/main/docs/exams/midterm/cheat-sheet.md" title="View source of this page" class="md-content__button md-icon">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M17 18c.56 0 1 .44 1 1s-.44 1-1 1-1-.44-1-1 .44-1 1-1m0-3c-2.73 0-5.06 1.66-6 4 .94 2.34 3.27 4 6 4s5.06-1.66 6-4c-.94-2.34-3.27-4-6-4m0 6.5a2.5 2.5 0 0 1-2.5-2.5 2.5 2.5 0 0 1 2.5-2.5 2.5 2.5 0 0 1 2.5 2.5 2.5 2.5 0 0 1-2.5 2.5M9.27 20H6V4h7v5h5v4.07c.7.08 1.36.25 2 .49V8l-6-6H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h4.5a8.15 8.15 0 0 1-1.23-2Z"/></svg>
+    </a>
+  
+
+
+<h1 id="midterm-cheat-sheet">Midterm Cheat Sheet</h1>
+<h2 id="names-and-functions">Names and Functions</h2>
+<p>Split Expression:
+<div class="language-python highlight"><pre><span></span><code><span id="__span-0-1"><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a><span class="n">a</span> <span class="o">=</span> <span class="mi">1</span>
+</span><span id="__span-0-2"><a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a><span class="n">b</span> <span class="o">=</span> <span class="mi">2</span>
+</span><span id="__span-0-3"><a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a><span class="n">a</span><span class="p">,</span> <span class="n">b</span> <span class="o">=</span> <span class="n">b</span><span class="p">,</span> <span class="n">a</span> <span class="c1"># Swaps values instantly</span>
+</span></code></pre></div></p>
+<h2 id="logical-operators">Logical Operators</h2>
+<h3 id="and"><code>and</code></h3>
+<ol>
+<li>Evaluate the left operand.</li>
+<li>If the left operand evaluates to a falsy value, evaluate to the left operand.</li>
+<li>Otherwise, evaluate to the right operand.</li>
+</ol>
+<h3 id="or"><code>or</code></h3>
+<ol>
+<li>Evaluate the left operand.</li>
+<li>If the left operand evaluates to a truthy value, evaluate to the left operand.</li>
+<li>Otherwise, evaluate to the right operand.</li>
+</ol>
+<h3 id="is"><code>is</code></h3>
+<p>Compares whether the variable location in memory is the same. In otherwise, it checks if it is the same instance 
+of an object.</p>
+<h2 id="classes">Classes</h2>
+<h3 id="inheritance">Inheritance</h3>
+<p>Use the <code>super()</code> to retrieve the parent class (or the class that the current class inherits from).</p>
+<h3 id="constructor">Constructor</h3>
+<p>Use the <code>__init__(self, arg1, arg2, argN)</code> method to create a constructor for a class.</p>
+<h3 id="self"><code>self</code></h3>
+<p>When referencing the current instance, use <code>self.&lt;name&gt;</code></p>
+<h3 id="string-representation">String Representation</h3>
+<h4 id="str"><code>str</code></h4>
+<p>The implementation of the <code>__str__</code> method is used when the <code>str(obj)</code> function is called on an object. This is used for
+general purpose, including printing.</p>
+<h4 id="repr"><code>repr</code></h4>
+<p>The implementation of the <code>__repr__</code> method is used when the <code>repr(obj)</code> function is called on an object. This typically
+represents a string that the computer interprets.</p>
+<p>During a interactive session or when <code>eval(str)</code> is called, the <code>__repr__</code> method is used. </p>
+<h2 id="lists">Lists</h2>
+<h3 id="list-functions">List Functions</h3>
+<h4 id="appending">Appending</h4>
+<p>Use the <code>lst.append(item)</code> method to append (i.e add) an item to the end of the list.</p>
+<details class="note" open="open">
+<summary>Equivalent to</summary>
+<p>Using the <code>lst.append(item)</code> method is equivalent to the following:</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-1-1"><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+</span><span id="__span-1-2"><a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a><span class="n">x</span> <span class="o">=</span> <span class="mi">4</span>
+</span><span id="__span-1-3"><a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>
+</span><span id="__span-1-4"><a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="n">a</span><span class="p">[</span><span class="nb">len</span><span class="p">(</span><span class="n">a</span><span class="p">):]</span> <span class="o">=</span> <span class="p">[</span><span class="n">x</span><span class="p">]</span>
+</span><span id="__span-1-5"><a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a><span class="n">a</span> <span class="o">=</span> <span class="n">a</span> <span class="o">+</span> <span class="p">[</span><span class="n">x</span><span class="p">]</span>
+</span><span id="__span-1-6"><a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a><span class="n">a</span> <span class="o">+=</span> <span class="p">[</span><span class="n">x</span><span class="p">]</span>
+</span><span id="__span-1-7"><a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="n">a</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">a</span><span class="p">),</span> <span class="n">x</span><span class="p">)</span>
+</span></code></pre></div>
+</details>
+<h4 id="extending">Extending</h4>
+<p>Use the <code>lst.extend(iterable)</code> method to extend the list with the items from the iterable. In other words, it appends
+every item from the iterable to the end of the list.
+This is equivalent to <code>lst[len(lst):] = iterable</code>.</p>
+<h4 id="inserting">Inserting</h4>
+<p>Use the <code>lst.insert(index, item)</code> to insert an item at the given index. This shifts the rest of the elments to the right.
+You can think of it as <code>index</code> being the index of the item before which to insert.</p>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-2-1"><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a><span class="n">a</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">]</span>
+</span><span id="__span-2-2"><a id="__codelineno-2-2" name="__codelineno-2-2" href="#__codelineno-2-2"></a><span class="n">a</span><span class="o">.</span><span class="n">insert</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">69</span><span class="p">)</span>
+</span><span id="__span-2-3"><a id="__codelineno-2-3" name="__codelineno-2-3" href="#__codelineno-2-3"></a>
+</span><span id="__span-2-4"><a id="__codelineno-2-4" name="__codelineno-2-4" href="#__codelineno-2-4"></a><span class="nb">print</span><span class="p">(</span><span class="n">a</span><span class="p">)</span> <span class="c1"># [69, 1, 2, 3]</span>
+</span></code></pre></div>
+<h4 id="removing">Removing</h4>
+<p>Use the <code>lst.remove(item)</code> method to remove the first item from the list whose value is equal to <code>item</code>.</p>
+<p>Use the <code>lst.pop([index])</code> method to remove the item at the given index. If no index is specified, it removes the last
+item.</p>
+<h3 id="list-comprehensions">List Comprehensions</h3>
+<p>Use the following syntax to create a list comprehension:
+<div class="language-python highlight"><pre><span></span><code><span id="__span-3-1"><a id="__codelineno-3-1" name="__codelineno-3-1" href="#__codelineno-3-1"></a><span class="p">[</span><span class="o">&lt;</span><span class="n">expression</span><span class="o">&gt;</span> <span class="k">for</span> <span class="o">&lt;</span><span class="n">name</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">iterable</span><span class="o">&gt;</span> <span class="k">if</span> <span class="o">&lt;</span><span class="n">condition</span><span class="o">&gt;</span><span class="p">]</span>
+</span></code></pre></div></p>
+<h3 id="list-operations">List Operations</h3>
+<h4 id="bracket-notation">Bracket Notation</h4>
+<p>To access a single item from a list with an index, use <code>lst[index]</code>.</p>
+<p>To shallow copy a list, use <code>lst[:]</code>.</p>
+<p>To shallow copy a slice of a list, use <code>lst[start:stop:step]</code>.</p>
+<h4 id="addition">Addition</h4>
+<p>Use the <code>+</code> operator to concatenate two lists together. This creates a new list.</p>
+<h2 id="dictionaries">Dictionaries</h2>
+<p>Keys must be immutable, as you cannot hash a mutable object while tracking its changes.</p>
+<h3 id="dictionary-functions">Dictionary Functions</h3>
+<h4 id="get">Get</h4>
+<p>Use <code>dict.get(key, default)</code> to get the value of the key. If the key does not exist, it returns the default value.</p>
+<h4 id="keys">Keys</h4>
+<p>Use <code>dict.keys()</code> to get a list of the keys in the dictionary.</p>
+<h4 id="values">Values</h4>
+<p>Use <code>dict.values()</code> to get a list of the values in the dictionary.</p>
+<h4 id="items">Items</h4>
+<p>Use <code>dict.items()</code> to get a list of the key-value pairs in the dictionary. This is a list of tuples.</p>
+<h2 id="control">Control</h2>
+<h3 id="pure-functions">Pure Functions</h3>
+<p>A pure function will only return values, such as <code>abs(x)</code> and <code>pow(b, e)</code>
+Non-pure functions will have side effects, including but not limited to environment changes and prints.</p>
+<h3 id="life-cycle-of-user-defined-functions">Life Cycle of User-Defined Functions</h3>
+<h4 id="definition">Definition</h4>
+<p>The operator is the name that binds to a function. The operands are evaluated.
+The respective function is then called on its parameters.</p>
+<h4 id="call-and-application">Call and Application</h4>
+<ol>
+<li>Create a new frame</li>
+<li>Parameters are bound to the arguments</li>
+<li>Execute the body of the function</li>
+</ol>
+<h3 id="inheritance-throughout-frames">Inheritance throughout Frames</h3>
+<p>The global frame is the initial frame where the program starts. It is the parent of all other frames. 
+When search for names, first look within the local frame, its parent(s), then finally global frames.</p>
+<h2 id="execution-rules">Execution Rules</h2>
+<h3 id="function-definition-statements">Function Definition Statements</h3>
+<ol>
+<li>Create a new function value with the intrinsic name</li>
+<li>Parent is assigned to the current working frame</li>
+<li>Bind the name of the function to the funciton object within the current working frame</li>
+</ol>
+<h3 id="assignment-statements">Assignment Statements</h3>
+<ol>
+<li>Evaluate the expression(s) that are being assigned to the name (i.e. the right side)</li>
+<li>Bind the names on the left to the evaluated values in the current working frame</li>
+</ol>
+<h3 id="conditional-statements">Conditional Statements</h3>
+<ol>
+<li>Evaluate the header's expression</li>
+<li>If the expressions evaluates to a truthy value, execute the suite, and skip the <code>elif</code> and <code>else</code> clauses</li>
+<li>Otherwise, evaluate the next <code>elif</code> clause, until you reach the <code>else</code> clause.</li>
+</ol>
+<h3 id="while-statements">While Statements</h3>
+<ol>
+<li>If the condition specific in the header evaluates to a truthy value, execute the suite, and repeat the process.</li>
+<li>When the condition evaluates to a false, exit the while loop. (i.e. do not execute the suite)</li>
+</ol>
+<h2 id="python-unique-features">Python Unique Features</h2>
+<h3 id="division">Division</h3>
+<p>The <code>/</code> operator will always return a float, even if the result is a whole number.
+Use the <code>//</code> operator to perform floor division. This will return the quotient of the division, rounded down to the nearest integer.</p>
+<h3 id="none"><code>None</code></h3>
+<p><code>None</code> is a special value that represents nothing, similar to <code>null</code> in other languages.</p>
+<h3 id="multiple-return-values">Multiple Return Values</h3>
+<p>You can return multiple values from a function by encapsulating them in a tuple.</p>
+<h3 id="boolean-context">Boolean Context</h3>
+<p>In Python, the following values are considered falsy:
+- <code>False</code>
+- <code>None</code>
+- <code>0</code>
+- <code>""</code>
+- <code>[]</code>
+- <code>()</code>
+- <code>{}</code>
+Truthy values are everything else.</p>
+<h2 id="recursion">Recursion</h2>
+<h3 id="recursive-steps">Recursive Steps</h3>
+<h4 id="identify-the-base-cases">Identify the base case(s)</h4>
+<p>Think about the simplest and smallest possible inputs to your function, such that you know the answer immediately.</p>
+<h4 id="recursive-leap-of-faith">Recursive Leap of Faith</h4>
+<p>Call your function on a smaller input, assuming that it works correctly.</p>
+<h4 id="recombination">Recombination</h4>
+<p>Build up the answer to the original problem using the previous result</p>
+<h3 id="recursion-examples">Recursion Examples</h3>
+<h4 id="summation">Summation</h4>
+<p>In this example, we return the sum of numbers through n (including n) with term applied to each number
+<div class="language-python highlight"><pre><span></span><code><span id="__span-4-1"><a id="__codelineno-4-1" name="__codelineno-4-1" href="#__codelineno-4-1"></a><span class="k">def</span> <span class="nf">summation</span><span class="p">(</span><span class="n">n</span><span class="p">,</span> <span class="n">term</span><span class="p">):</span> <span class="c1"># n must be &gt;= 1</span>
+</span><span id="__span-4-2"><a id="__codelineno-4-2" name="__codelineno-4-2" href="#__codelineno-4-2"></a>    <span class="c1"># </span>
+</span><span id="__span-4-3"><a id="__codelineno-4-3" name="__codelineno-4-3" href="#__codelineno-4-3"></a>    <span class="k">if</span> <span class="n">n</span> <span class="o">==</span> <span class="mi">1</span><span class="p">:</span>
+</span><span id="__span-4-4"><a id="__codelineno-4-4" name="__codelineno-4-4" href="#__codelineno-4-4"></a>        <span class="k">return</span> <span class="n">term</span><span class="p">(</span><span class="n">n</span><span class="p">)</span>
+</span><span id="__span-4-5"><a id="__codelineno-4-5" name="__codelineno-4-5" href="#__codelineno-4-5"></a>    <span class="k">return</span> <span class="n">term</span><span class="p">(</span><span class="n">n</span><span class="p">)</span> <span class="o">+</span> <span class="n">summation</span><span class="p">(</span><span class="n">n</span> <span class="o">-</span> <span class="mi">1</span><span class="p">,</span> <span class="n">term</span><span class="p">)</span>
+</span></code></pre></div></p>
+<h4 id="number-of-eights">Number of Eights</h4>
+<div class="language-python highlight"><pre><span></span><code><span id="__span-5-1"><a id="__codelineno-5-1" name="__codelineno-5-1" href="#__codelineno-5-1"></a><span class="k">def</span> <span class="nf">num_eights</span><span class="p">(</span><span class="n">pos</span><span class="p">):</span>
+</span><span id="__span-5-2"><a id="__codelineno-5-2" name="__codelineno-5-2" href="#__codelineno-5-2"></a>    <span class="k">if</span> <span class="n">pos</span> <span class="o">%</span> <span class="mi">10</span> <span class="o">==</span> <span class="mi">8</span><span class="p">:</span>
+</span><span id="__span-5-3"><a id="__codelineno-5-3" name="__codelineno-5-3" href="#__codelineno-5-3"></a>        <span class="k">return</span> <span class="mi">1</span> <span class="o">+</span> <span class="n">num_eights</span><span class="p">(</span><span class="n">pos</span> <span class="o">//</span> <span class="mi">10</span><span class="p">)</span>
+</span><span id="__span-5-4"><a id="__codelineno-5-4" name="__codelineno-5-4" href="#__codelineno-5-4"></a>    <span class="k">elif</span> <span class="n">pos</span> <span class="o">&lt;</span> <span class="mi">10</span><span class="p">:</span>
+</span><span id="__span-5-5"><a id="__codelineno-5-5" name="__codelineno-5-5" href="#__codelineno-5-5"></a>        <span class="k">return</span> <span class="mi">0</span>
+</span><span id="__span-5-6"><a id="__codelineno-5-6" name="__codelineno-5-6" href="#__codelineno-5-6"></a>    <span class="k">return</span> <span class="n">num_eights</span><span class="p">(</span><span class="n">pos</span> <span class="o">//</span> <span class="mi">10</span><span class="p">)</span>
+</span></code></pre></div>
+<h3 id="tree-recursion-example">Tree Recursion Example</h3>
+<h4 id="counting-coins">Counting Coins</h4>
+<p>In this example, we want to return the number of ways to make change using coins of value 1, 5, 10, 25.
+<div class="language-python highlight"><pre><span></span><code><span id="__span-6-1"><a id="__codelineno-6-1" name="__codelineno-6-1" href="#__codelineno-6-1"></a><span class="k">def</span> <span class="nf">get_smaller_coin</span><span class="p">(</span><span class="n">_</span><span class="p">):</span>
+</span><span id="__span-6-2"><a id="__codelineno-6-2" name="__codelineno-6-2" href="#__codelineno-6-2"></a>    <span class="k">return</span> <span class="kc">None</span> <span class="c1"># Implementation not shown</span>
+</span><span id="__span-6-3"><a id="__codelineno-6-3" name="__codelineno-6-3" href="#__codelineno-6-3"></a>
+</span><span id="__span-6-4"><a id="__codelineno-6-4" name="__codelineno-6-4" href="#__codelineno-6-4"></a><span class="k">def</span> <span class="nf">count_coins</span><span class="p">(</span><span class="n">change</span><span class="p">):</span>
+</span><span id="__span-6-5"><a id="__codelineno-6-5" name="__codelineno-6-5" href="#__codelineno-6-5"></a>    <span class="k">def</span> <span class="nf">helper</span><span class="p">(</span><span class="n">amount</span><span class="p">,</span> <span class="n">parent_coin</span><span class="p">):</span>
+</span><span id="__span-6-6"><a id="__codelineno-6-6" name="__codelineno-6-6" href="#__codelineno-6-6"></a>        <span class="k">if</span> <span class="n">amount</span> <span class="o">==</span> <span class="mi">0</span><span class="p">:</span>
+</span><span id="__span-6-7"><a id="__codelineno-6-7" name="__codelineno-6-7" href="#__codelineno-6-7"></a>            <span class="k">return</span> <span class="mi">1</span>
+</span><span id="__span-6-8"><a id="__codelineno-6-8" name="__codelineno-6-8" href="#__codelineno-6-8"></a>        <span class="k">if</span> <span class="n">amount</span> <span class="o">&lt;</span> <span class="mi">0</span><span class="p">:</span>
+</span><span id="__span-6-9"><a id="__codelineno-6-9" name="__codelineno-6-9" href="#__codelineno-6-9"></a>            <span class="k">return</span> <span class="mi">0</span>
+</span><span id="__span-6-10"><a id="__codelineno-6-10" name="__codelineno-6-10" href="#__codelineno-6-10"></a>
+</span><span id="__span-6-11"><a id="__codelineno-6-11" name="__codelineno-6-11" href="#__codelineno-6-11"></a>        <span class="n">smaller_coin</span> <span class="o">=</span> <span class="n">get_smaller_coin</span><span class="p">(</span><span class="n">parent_coin</span><span class="p">)</span>
+</span><span id="__span-6-12"><a id="__codelineno-6-12" name="__codelineno-6-12" href="#__codelineno-6-12"></a>        <span class="k">if</span> <span class="n">smaller_coin</span> <span class="ow">is</span> <span class="kc">None</span><span class="p">:</span>
+</span><span id="__span-6-13"><a id="__codelineno-6-13" name="__codelineno-6-13" href="#__codelineno-6-13"></a>            <span class="k">return</span> <span class="mi">1</span>
+</span><span id="__span-6-14"><a id="__codelineno-6-14" name="__codelineno-6-14" href="#__codelineno-6-14"></a>        <span class="k">return</span> <span class="n">helper</span><span class="p">(</span><span class="n">amount</span> <span class="o">-</span> <span class="n">parent_coin</span><span class="p">,</span> <span class="n">parent_coin</span><span class="p">)</span> <span class="o">+</span> <span class="n">helper</span><span class="p">(</span><span class="n">amount</span><span class="p">,</span> <span class="n">smaller_coin</span><span class="p">)</span>
+</span><span id="__span-6-15"><a id="__codelineno-6-15" name="__codelineno-6-15" href="#__codelineno-6-15"></a>    <span class="k">return</span> <span class="n">helper</span><span class="p">(</span><span class="n">change</span><span class="p">,</span> <span class="mi">25</span><span class="p">)</span>
+</span></code></pre></div></p>
+<h2 id="environment-diagrams">Environment Diagrams</h2>
+<p>Environment diagrams will always begin a global frame, which is the parent of all other frames.</p>
+<p>Primitive values are stored within the table, all other objects are referenced with pointers.</p>
+<h3 id="syntax">Syntax</h3>
+<h4 id="frame-header">Frame Header</h4>
+<p>The syntax from the frame header is as follows:
+<div class="language-text highlight"><pre><span></span><code><span id="__span-7-1"><a id="__codelineno-7-1" name="__codelineno-7-1" href="#__codelineno-7-1"></a>f&lt;frame number&gt;: &lt;origin&gt; [parent=&lt;parent&gt;]
+</span></code></pre></div></p>
+<ul>
+<li><code>&lt;frame number&gt;</code> is the number of the frame, starting from 0</li>
+<li><code>&lt;origin&gt;</code> is the origin of the frame, which is either <code>global</code> or <code>function</code></li>
+<li><code>&lt;parent&gt;</code> is the parent of the frame, which is the frame number of the parent</li>
+</ul>
+<h4 id="function-syntax">Function Syntax</h4>
+<p>The syntax for a function is as follows:
+<div class="language-text highlight"><pre><span></span><code><span id="__span-8-1"><a id="__codelineno-8-1" name="__codelineno-8-1" href="#__codelineno-8-1"></a>func&lt;intrinsics name&gt;(&lt;parameters&gt;) [parent=&lt;parent&gt;]
+</span></code></pre></div></p>
+<ul>
+<li><code>&lt;intrinsics name&gt;</code> is the name of the function</li>
+<li><code>&lt;parameters&gt;</code> is the list of parameters, separated by commas</li>
+<li><code>&lt;parent&gt;</code> is the parent of the frame, which is the frame number of the parent</li>
+</ul>
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+  <script>var tabs=__md_get("__tabs");if(Array.isArray(tabs))e:for(var set of document.querySelectorAll(".tabbed-set")){var tab,labels=set.querySelector(".tabbed-labels");for(tab of tabs)for(var label of labels.getElementsByTagName("label"))if(label.innerText.trim()===tab){var input=document.getElementById(label.htmlFor);input.checked=!0;continue e}}</script>
+
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
+            Back to top
+          </button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="review-problems.html" class="md-footer__link md-footer__link--prev" aria-label="Previous: Review Problems" rel="prev">
+            <div class="md-footer__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                Review Problems
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../final/tips.html" class="md-footer__link md-footer__link--next" aria-label="Next: Tips" rel="next">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                Tips
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    <script id="__config" type="application/json">{"base": "../..", "features": ["toc.follow", "navigation.top", "content.code.copy", "content.action.edit", "content.action.view", "navigation.footer", "content.tabs.link"], "search": "../../assets/javascripts/workers/search.74e28a9f.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.220ee61c.min.js"></script>
+      
+        
+          <script src="../../javascripts/katex.js"></script>
+        
+      
+        
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/katex.min.js"></script>
+        
+      
+        
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.7/contrib/auto-render.min.js"></script>
+        
+      
+    
+  <script>document$.subscribe(() => {const lightbox = GLightbox({"touchNavigation": true, "loop": false, "zoomable": true, "draggable": true, "openEffect": "zoom", "closeEffect": "zoom", "slideEffect": "slide"});})</script></body>
+</html>
